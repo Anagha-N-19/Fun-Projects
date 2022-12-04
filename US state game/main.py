@@ -37,19 +37,3 @@ while(len(guess)<50):
 
 print(notlist)
 s.exitonclick()
-
-''''
-for i in range(49):
-    answer = s.textinput(title = "%d/50 States correct",%i+1,prompt = "state name :")
-    
-    if answer not in datalist:
-        i = i-1
-    else:
-        datalist.remove(answer)
-
-
-
-
-
-turtle.mainloop()
-'''
