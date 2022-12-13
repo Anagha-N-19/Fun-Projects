@@ -1,7 +1,5 @@
 import requests
 
-# latitude = 8.524139
-# longitude = 76.936638
 my_api = '********'
 place = 'Delhi'
 lat = float(input("Enter latitude "))
