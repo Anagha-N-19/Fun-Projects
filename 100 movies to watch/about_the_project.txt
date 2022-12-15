@@ -1,0 +1,1 @@
+This is done using web scraping,and also includes API. The data from a website are used to input into a text document.
