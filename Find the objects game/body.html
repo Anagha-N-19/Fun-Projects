@@ -1,0 +1,218 @@
+<html>
+<head>
+<script language="javascript">
+var score=0;
+var cb=0,cd=0,cbu=0,cc=0,cg=0,ch=0,chu=0,co=0,cp=0,ct=0,cto=0,cbr=0;
+function countboat(){
+if(cb==0){
+
+
+++score;
+++cb
+alert("Correct...Score = "+score);
+}
+else if(cb==5)
+over();
+else
+alert("But You have found it already !!!");}
+function countdog(){
+
+if(cd==0){
+var cr=0;
+++cd;
+++score;
+alert("Correct...Score = "+score);
+}
+else if(cd==5)
+over();
+else
+alert("But You have found it already !!!");}
+function countbutton(){
+
+if(cbu==0){
+var cr=0;
+++cbu;
+++score;
+alert("Correct...Score = "+score);
+}
+else if(cbu==5)
+over();
+else
+alert("But You have found it already !!!");}
+function countcoin(){
+
+if(cc==0){
+
+++cc;
+++score;
+alert("Correct...Score = "+score);
+}
+else if(cc==5)
+over();
+else
+alert("But You have found it already !!!");}
+function countgl(){
+
+if(cg==0){
+++cg;
+++score;
+alert("Correct...Score = "+score);
+}
+else if(cg==5)
+over();
+else
+alert("But You have found it already !!!");}
+function counthorse(){
+
+if(ch==0){
+++ch;
+++score;
+alert("Correct...Score = "+score);
+}
+else if(ch==5)
+over();
+else
+alert("But You have found it already !!!");
+}
+function counthouse(){
+
+if(chu==0){
+
+++ch;
+++score;
+alert("Correct...Score = "+score);
+}
+else if(ch==5)
+over();
+else
+alert("But You have found it already !!!");}
+function countoran(){
+
+if(co==0){
+
+++co;
+++score;
+alert("Correct...Score = "+score);
+}
+else if(co==5)
+over();
+else
+alert("But You have found it already !!!");}
+function countpin(){
+
+if(cp==0){
+
+++cp;
+++score;
+alert("Correct...Score = "+score);
+}
+else if(cp==5)
+over();
+else
+alert("But You have found it already !!!");}
+function counttenn(){
+
+if(ct==0){
+++ct;
+++score;
+alert("Correct...Score = "+score);
+}
+else if(ct==5)
+over();
+else
+alert("But You have found it already !!!");}
+function counttooth(){
+
+if(cto==0){
+++cto;
+++score;
+alert("Correct...Score = "+score);
+}
+else if(cto==5)
+over();
+else
+alert("But You have found it already !!!");}
+function countbrush(){
+
+if(cbr==0){
+var cr=0;
+++cbr;
+++score;
+alert("Correct...Score = "+score);
+}
+else if(cbr==5)
+over();
+else
+alert("But You have found it already !!!");}
+function tot(){
+alert("Total Score = "+score);
+document.getElementById("sc").value=score;
+if(score==12)
+alert("Winner with keen eyes...");
+else if(score>9)
+alert("Good Job...");
+else if(score>5)
+alert("Next time ,it might get better...");
+else
+alert("Try Again");
+over();
+}
+function my(){
+alert("Time over ");
+tot();
+
+}
+function over(){
+alert("Time over");
+cb=5,cd=5,cbu=5,cc=5,cg=5,ch=5,chu=5,co=5,cp=5,ct=5,cto=5,cbr=5;
+}
+</script>
+</head>
+<body bgcolor="#70db70" onload="setTimeout(my,30000)">
+<h1><center>FIND THE OBJECTS</center></h1>
+<h4><center>You have 30 seconds</center></h4>
+<div id="countdown_div">
+</div>
+<script>
+var remainingTime =26;
+    var elem = document.getElementById('countdown_div');
+    var timer = setInterval(countdown, 1000);
+ function countdown() {
+if (remainingTime == -1) {
+        clearTimeout(timer);
+        alert("Thanku");} 
+else {
+        elem.innerHTML = remainingTime + ' seconds left';
+        remainingTime--; }
+    }
+</script>
+<p><font color="Darkgreen" face="Comic Sans MS">Hello... You need to find the objects mentioned in the image.
+For each finding, you get 1 point. The maximum points are 12.Find them within 1 minute to win.<br> So Good Luck !!!</font></p>
+
+
+<center><img src="https://coolmomtech.com/wp-content/uploads/sites/2/2016/02/highlights-hidden-pictures-app-teacups.jpg" usemap="#image-map"></center>
+
+<map name="image-map">
+    <area  alt="Boat" title="Boat"  coords="609,190,603,194,607,204,612,210,614,222,620,224,628,224,635,221,642,212,648,205,636,198,626,194,616,192" shape="poly" onclick="countboat()">
+    <area alt="Dog Bone" title="Dog Bone"  coords="298,69,305,65,303,54,306,45,298,42,290,42,288,50,293,54,288,66" shape="poly" onclick="countdog()">
+    <area alt="Button" title="Button" coords="478,28,476,37,480,46,488,46,496,41,499,30,491,24,484,24" shape="poly" onclick="countbutton()">
+    <area alt="Coin" title="Coin"  coords="473,202,468,206,466,217,472,222,480,227,493,228,499,225,506,216,502,206,491,201,482,200" shape="poly" onclick="countcoin()">
+    <area alt="Glove" title="Glove" coords="388,347,386,337,382,329,381,318,384,310,389,318,390,308,390,300,396,292,398,299,404,290,408,296,414,298,414,305,419,306,417,314,415,323,412,330,407,340,402,345,394,348" shape="poly" onclick="countgl()">
+    <area alt="Horseshoe" title="Horseshoe" coords="599,104,604,98,610,98,616,92,623,90,629,94,632,102,642,103,645,107,638,109,629,110,626,102,620,103,617,108,609,109,602,108" shape="poly" onclick="counthorse()">
+    <area alt="House" title="House"  coords="416,116,416,104,416,94,422,88,428,80,433,86,438,95,440,104,440,114,436,118,427,118" shape="poly" onclick="counthouse()">
+    <area alt="Slice Of Orange" title="Slice Of Orange"  coords="318,382,309,387,304,390,294,393,290,398,283,412,283,418,285,429,292,436,300,442,308,446,320,449,326,442,324,428,323,417,322,408,321,395" shape="poly" onclick="countoran()">
+    <area alt="Safety Pin" title="Safety Pin" coords="366,202,359,196,353,188,348,177,344,166,346,156,352,156,359,158,364,166,368,174,372,182,376,186,379,192,379,200,374,206" shape="poly" onclick="countpin()">
+    <area alt="Tennis Raquet" title="Tennis Raquet" coords="490,427,497,424,508,422,517,425,529,430,538,429,548,426,557,418,554,406,544,402,532,401,524,404,517,411,512,414,504,413,493,416,486,418,482,424" shape="poly" onclick="counttenn()">
+    <area alt="Tooth" title="Tooth"  coords="538,134,529,128,525,118,532,110,540,104,545,110,547,118,550,127,543,126" shape="poly" onclick="counttooth()">
+    <area alt="Toothbrush" title="Toothbrush" coords="387,220,378,226,378,235,378,245,382,252,389,252,400,252,402,243,402,230,400,216,400,207,401,194,403,182,403,169,400,160,402,151,402,140,402,130,400,116,390,114,390,126,390,137,391,146,390,154,389,170,389,179,389,187,389,194,389,203,389,210" shape="poly" onclick="countbrush()">
+</map>
+<br><br>
+<form>
+<center><input type="button" value="Submit My Findings" onclick="tot()"/></center>
+<br>
+<center><font size="5" color="Blue">Score = (Out of 12) </font>
+<input type="text" id="sc" size="2" readonly/></center>
+</form>
+</body>
+</html>
+
